@@ -1,0 +1,7 @@
+<div class="rating-product-cpn">
+  <!--<div class="yotpo-widget-instance" data-yotpo-instance-id="220706" data-yotpo-product-id="{{product.id}}"></div>-->
+  <div class="yotpo bottomLine" data-appkey="B8DH2hejoJ8EK3MgnpQSNsUi1RpdreC4PxlCZvwd" data-domain="{{shop.permanent_domain | escape }}" data-product-id="{{ product.id }}" data-product-models="{{ product.id }}" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&amp;','%26'}}" data-description="{{ product.description | escape }}" data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}">
+  </div>
+</div>
+
+<script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/B8DH2hejoJ8EK3MgnpQSNsUi1RpdreC4PxlCZvwd" async=""></script>

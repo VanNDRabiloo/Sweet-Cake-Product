@@ -1,0 +1,73 @@
+.note-cpn ul.list-text-note{
+	list-style: none;
+	padding-left: 150px;
+	padding-bottom: 20px;
+	font-size: 22px;
+	max-height: 500px;
+	overflow: hidden;
+	transition: 0.3s;
+}
+.note-cpn ul.list-text-note.expand{
+	max-height: unset;
+}
+.note-cpn .expand-or-shrink{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	color: #ce3131;
+	font-size: 18px;
+	background: linear-gradient(0deg, #F4CBC9 0%, rgba(255,255,255,0) 100%);
+	padding: 0 20px;
+	border-radius: 5px;
+	border-bottom: 1px solid;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.note-cpn .expand-or-shrink:hover{
+	background: linear-gradient(0deg, #F4CBC9 50%, rgba(255,255,255,0) 100%);
+}
+.note-cpn li.text-note-item i{
+	font-size: 24px;
+	margin-right: 4px;
+}
+.note-cpn span.text-note{
+	font-size: 28px;
+	word-break: break-all;
+}
+.note-cpn li.text-note-item{
+	padding: 10px 0;
+}
+@media (max-width: 767px){
+	.note-cpn ul.list-text-note{
+		list-style: none;
+		padding-left: 20px;
+		padding-right: 10px;
+	}
+	 .note-cpn li.text-note-item i{
+		font-size: 18px;
+		margin-right: 6px;
+	}
+	 .note-cpn span.text-note{
+		font-size: 18px;
+		word-break: break-all;
+	}
+	 .note-cpn .check-list-content{
+		padding-bottom: 0 !important;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.note-cpn ul.list-text-note{
+		list-style: none;
+		padding-left: 50px;
+		padding-right: 20px;
+	}
+	 .note-cpn li.text-note-item i{
+		font-size: 24px;
+		margin-right: 6px;
+	}
+	 .note-cpn span.text-note{
+		font-size: 24px;
+		word-break: break-all;
+	}
+}

@@ -1,0 +1,16 @@
+.product-info{
+}
+.product-info .product-name{
+	font-size: 42px;
+}
+.product-info .product-detail{
+	font-size: 42px;
+}
+@media (max-width: 767px){
+	.product-info .product-name{
+		font-size: 28px;
+	}
+	 .product-info .product-detail{
+		font-size: 28px;
+	}
+}

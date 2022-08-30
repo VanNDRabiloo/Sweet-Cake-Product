@@ -1,0 +1,19 @@
+.social-network-cpn .list-social-network{
+	display: flex;
+	justify-content: center;
+}
+.social-network-cpn .social-network-logo{
+	font-size: 60px;
+	letter-spacing: 44px;
+}
+.social-network-cpn .social-network-logo:hover{
+	color: #EB9B9B;
+	transition: .3s;
+}
+@media (max-width: 767px){
+	.social-network-cpn .social-network-logo{
+		font-size: 50px;
+		letter-spacing: 32px;
+		margin-left: 10px;
+	}
+}

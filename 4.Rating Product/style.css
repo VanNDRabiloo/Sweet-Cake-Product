@@ -1,0 +1,36 @@
+.rating-product-cpn{
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+}
+.rating-product-cpn .star-container svg{
+	width: 28px !important;
+	height: 22px !important;
+}
+.rating-product-cpn .yotpo-sr-bottom-line-left-panel.yotpo-sr-bottom-line-score{
+	font-size: 22px !important;
+	line-height: 28px !important;
+}
+.rating-product-cpn .yotpo-sr-vertical-border{
+	height: 28px !important;
+}
+.rating-product-cpn .yotpo-sr-bottom-line-text{
+	font-size: 22px !important;
+	line-height: 28px !important;
+}
+.yotpo.bottomLine .yotpo-bottomline .yotpo-icon-star, .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-half-star, .yotpo.bottomLine .yotpo-bottomline .yotpo-icon-empty-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-half-star, .yotpo.bottomline .yotpo-bottomline .yotpo-icon-empty-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-half-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-icon-empty-star{
+	font-size: 26px;
+}
+.rating-product-cpn .yotpo .text-m{
+	font-size: 20px;
+	line-height: 26px;
+	margin-left: 10px;
+}
+@media (max-width: 767px){
+	.rating-product-cpn ul.gf_icon-list{
+		font-size: 18px;
+	}
+	 .rating-product-cpn p.rating-text{
+		font-size: 18px;
+	}
+}

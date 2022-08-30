@@ -1,0 +1,27 @@
+<div class="choose-product-option-cpn">
+  <div class="check-list-content" style="display: flex; align-items: center; padding-bottom: 40px;">
+  <div class="check-list-icon" style="margin-right: 10px;">
+    <img src="https://ucarecdn.com/036783c6-6e23-462a-98e0-a52f9f42f4c9/-/format/auto/-/preview/3000x3000/-/quality/lighter/unnamed.png">
+  </div>
+  <div class="check-list-text" style="font-size: 24px;">商品種類選択</div>
+  </div>
+
+  <div class="choosing-product text-align-center">
+    {% for option in product.variants %}
+      <button class="product-option product-option-1" data-id="{{option.id}}" onclick="handleChooseOptionProduct(event, '{{option.price}}', '{{option.id}}')">{{ option.title }}</button>
+    {% endfor %}
+  </div>
+  <div class="choosing-product" style="margin-left: 0;">
+        <button class="product-option product-option-2" onclick="handleChooseOptionProduct2(event)">冷凍便</button>
+  </div>
+  
+  <div class="price-wrapper">
+  <div class="price">
+    <span class="price-number">￥<span>{{product.variants[0].price  | money_without_currency |}}</span></span>
+    <span class="other">（税込）</span>
+  </div>
+  <div class="scored-added">
+    <span>15ポイント（獲得ポイント数）</span>
+  </div>
+</div>
+</div>

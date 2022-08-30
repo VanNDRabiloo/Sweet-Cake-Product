@@ -1,0 +1,33 @@
+<div class="toolbar-fixed-bottom-cpn">
+  <div class="toolbar-container flex-center align-start-mobile" style="display: none">
+    <div class="flex-center flex-wrap-mobile" style="flex-basis: 40%; margin-right: 10px;">
+      <a href="/collections/all" class="ask-question flex-center">ショップへ相談</a>
+      <div class="favorite">
+      <div class="favorite-icon">
+        <div class="gf_icon-wrap"><i class="gf_icon fa fa-star"></i></div>
+      </div>
+      <div class="favorite-text">お気に入り</div>
+    </div>
+    </div>
+    <div class="flex-center flex-wrap-mobile" style="flex-basis: 60%;">
+      <a href="/cart" class="total-price flex-center">
+          <div style="flex-shrink: 0;">合計：</div>
+          <div class="number-wrap">
+            <span class="current-price">￥</span>
+            <span class="number-price">{{cart.total_price | money_without_currency }}</span>
+            <span class="tax-text">（税込）</span>
+          </div>
+      </a>
+      <div class="add-to-cart flex-center" onclick="addProductToCart()">カートに入れる</div>
+      <img class="product-added-animation animate__animated animate__zoomOutUp">
+    </div>
+  </div>
+</div>
+
+<div class="toast-message-cpn">
+  <div id="toast"></div></div>
+
+<script>var product = {{product | json }}</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
